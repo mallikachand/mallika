@@ -34,4 +34,7 @@ body {
   
     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/8e/bb/96/8ebb96be428c20e1418863602b9c4ae2.gif");
     background-color: #cccccc;
+       background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
 }
