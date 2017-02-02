@@ -18,3 +18,9 @@ h1 {
     border: 1px solid white;
     padding: 30px;
 }
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
