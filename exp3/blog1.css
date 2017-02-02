@@ -1,6 +1,8 @@
 body {
     background-image: url("http://36.media.tumblr.com/cec864b28bba2991e90f7000410233ae/tumblr_myohboy8751qkhaito1_500.jpg");
-    background-repeat: no-repeat;
+   background-repeat: repeat-y;
+    background-position: right top;
+    margin-right: 200px;
 }
 h1 {
     color: blue;
