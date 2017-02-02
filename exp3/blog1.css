@@ -1,7 +1,7 @@
 body {
     background-image: url("https://s-media-cache-ak0.pinimg.com/736x/d6/ae/3f/d6ae3f1469c1401a738625615eab7053.jpg");
    background-repeat: repeat-y;
-    background-position: right top;
+    background-repeat: repeat-x;
     margin-right: 200px;
 }
 h1 {
