@@ -106,3 +106,6 @@ ul li {
     -o-border-image: url(http://kidspressmagazine.com/t500/8678/8683/paper-borders-red-white-blue-stars.png) 30 round; /* Opera 11-12.1 */
     border-image: url(http://kidspressmagazine.com/t500/8678/8683/paper-borders-red-white-blue-stars.png) 30 round;
 }
+body {
+    background-color: Purple ;
+}
