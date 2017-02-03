@@ -40,7 +40,7 @@ img {
     100% {background-color:red; left:0px; top:0px;}
 }
 
-h{
+h1{
     border: 1px solid red;
     outline-style: dotted;
     outline-color: #00ff00;
@@ -54,6 +54,29 @@ p {
     width: 70%;
     background-color: powderblue;
 }
+    
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #4CAF50;
+}
 p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
     border-style: dotted solid;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
 }
