@@ -60,6 +60,7 @@ h1 {
     text-transform: uppercase;
     text-decoration: underline;
     color: #4CAF50;
+     text-shadow: 0 0 3px MediumSeaGreen, 0 0 5px MediumSeaGreen;
 }
 p {
     text-indent: 50px;
