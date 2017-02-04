@@ -44,6 +44,7 @@ body {
     background-image: url("http://bestanimations.com/Transport/Aircraft/plane-travel-animated-gif-34.gif");
     background-color: powderblue ;
        background-repeat: repeat-y;
+        background-repeat: repeat-x;
     background-position: right top;
     margin-right: 200px;
 }
