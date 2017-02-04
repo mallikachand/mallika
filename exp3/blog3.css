@@ -48,6 +48,13 @@ body {
     background-position: right top;
     margin-right: 200px;
 }
+body {
+  
+    background-image: url("http://bestanimations.com/Transport/Aircraft/plane-travel-animated-gif-34.gif");
+    background-color: powderblue ;
+       background-repeat: repeat-y;
+    background-position: left top;
+}
 
 
 h1{
