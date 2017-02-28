@@ -1,29 +1,34 @@
-// Object creation
-var company = new Object();
-company.name = "Facebook";
-company.ceo = new Object();
-company.ceo.firstName = "Mallika ";
-company.ceo.favColor = "black";
+// Functions are First-Class Data Types
+// Functions ARE objects
+function multiply(x, y) {
+  return x * y;
+}
+multiply.version = "v.1.0.0";
+console.log(multiply.version);
 
-console.log(company);
-console.log("Company CEO name is: " 
-  + company.ceo.firstName);
 
-console.log(company["name"]);
-var stockPropName = "stock of company";
-company[stockPropName] = 110;
+// Function factory
+function makeMultiplier(multiplier) {
+  var myFunc = function (x) {
+    return multiplier * x;
+  };
 
-console.log("Stock price is: " + 
-  company[stockPropName]);
+  return myFunc;
+}
 
-// Better way: object literal
-var facebook = {
-  name: "Facebook",
-  ceo: {
-    firstName: "Mallika",
-    favColor: "black"
-  },
-  "stock of company": 110
-};
+var multiplyBy3 = makeMultiplier(3);
+console.log(multiplyBy3(10));
+var doubleAll = makeMultiplier(2);
+console.log(doubleAll(100));
 
-console.log(facebook.ceo.firstName);
+
+
+// Passing functions as arguments
+function doOperationOn(x, operation) {
+  return operation(x);
+}
+
+var result = doOperationOn(5, multiplyBy3);
+console.log(result);
+result = doOperationOn(100, doubleAll);
+console.log(result);
