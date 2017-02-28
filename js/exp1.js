@@ -19,8 +19,8 @@ console.log("Stock price is: " +
 var facebook = {
   name: "Facebook",
   ceo: {
-    firstName: "Mark",
-    favColor: "blue"
+    firstName: "Mallika",
+    favColor: "black"
   },
   "stock of company": 110
 };
