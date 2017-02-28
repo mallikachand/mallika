@@ -7,9 +7,9 @@ function c1(at,x)
     var j;
     var r;
     var temp;
-    for(i=0,i<(at.length-1); i++)
+    for(i=0;i<(at.length-1); i++)
     {
-        for(j=0,j<at.length;j++)
+        for(j=0;j<at.length;j++)
         {
             if(at[i]>at[j])
             {
