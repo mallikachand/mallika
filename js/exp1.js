@@ -1,7 +1,8 @@
+// Object creation
 var company = new Object();
 company.name = "Facebook";
 company.ceo = new Object();
-company.ceo.firstName = "Mallika";
+company.ceo.firstName = "Mallika ";
 company.ceo.favColor = "black";
 
 console.log(company);
