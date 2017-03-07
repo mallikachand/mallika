@@ -17,19 +17,26 @@ document.addEventListener("DOMContentLoaded",
           document
             .querySelector("#title")
             .textContent;
-        title += " & Lovin' it!";
-        document
+            if(cnt==0)
+    {
+     title += " & Lovin' it!";
+      cnt++;
+    }
+            document
             .querySelector("h1")
             .textContent = title;
-      }
     }
-
-    // Unobtrusive event binding
+  else
+  {
+    cnt=0;
+    var title = "Lecture 53"
     document.querySelector("button")
       .addEventListener("click", sayHello);
+  };
 
-  }
-);
+    // Unobtrusive event binding
+
+ 
 
 
 
