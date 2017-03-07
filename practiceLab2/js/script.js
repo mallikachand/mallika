@@ -35,7 +35,7 @@ function sayHello ()
   else
   {
     cnt=0;
-    var title = "xyz"
+    var title = ""
     document
          .querySelector("h1")
         .textContent = title;
