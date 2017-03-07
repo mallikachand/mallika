@@ -22,21 +22,26 @@ document.addEventListener("DOMContentLoaded",
      title += " & Lovin' it!";
       cnt++;
     }
-            document
+                document
             .querySelector("h1")
             .textContent = title;
-    }
-  else
+      }
+        else
   {
     cnt=0;
     var title = "Lecture 53"
+     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", sayHello);
-  };
 
-    // Unobtrusive event binding
+    
+  }
+
+    }
+
 
  
+);
 
 
 
