@@ -37,10 +37,7 @@ document.addEventListener("DOMContentLoaded",
     
   }
 
-    }
-
-
- 
+    } 
 );
 
 
