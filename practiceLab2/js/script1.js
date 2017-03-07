@@ -17,27 +17,18 @@ document.addEventListener("DOMContentLoaded",
           document
             .querySelector("#title")
             .textContent;
-            if(cnt==0)
-    {
-     title += " & Lovin' it!";
-      cnt++;
-    }
-                document
+        title += " & Lovin' it!";
+        document
             .querySelector("h1")
             .textContent = title;
       }
-        else
-  {
-    cnt=0;
-    var title = "Lecture 53"
-     // Unobtrusive event binding
+    }
+
+    // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", sayHello);
 
-    
   }
-
-    } 
 );
 
 
