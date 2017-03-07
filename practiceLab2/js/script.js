@@ -37,8 +37,8 @@ function sayHello ()
     cnt=0;
     var title = "Lecture 53"
     document
-         .querySelector("h1")
-        .textContent = title;
+          .querySelector("h1")
+          .textContent = title;
     
   }
 }
