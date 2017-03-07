@@ -1,4 +1,5 @@
 // Event handling
+var cnt=0;
 document.addEventListener("DOMContentLoaded",
   function (event) {
     
@@ -17,17 +18,27 @@ document.addEventListener("DOMContentLoaded",
           document
             .querySelector("#title")
             .textContent;
-        title += " & Lovin' it!";
-        document
-            .querySelector("h1")
-            .textContent = title;
-      }
+            if(cnt==0)
+    {
+     title += " & Lovin' it!";
+      cnt++;
     }
-
     // Unobtrusive event binding
-    document.querySelector("button")
+    document
+      .querySelector("button")
       .addEventListener("click", sayHello);
 
+      }
+    }
+  else
+  {
+    cnt=0;
+    var title = "Lecture 54"
+    document
+          .querySelector("button")
+          .textContent = title;
+    
+  }
   }
 );
 
