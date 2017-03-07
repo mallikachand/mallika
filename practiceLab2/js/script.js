@@ -1,7 +1,7 @@
 // DOM manipulation
 // console.log(document.getElementById("title"));
 // console.log(document instanceof HTMLDocument);
-
+var cnt=0;
 function sayHello () 
 {
   var name =
@@ -22,9 +22,23 @@ function sayHello ()
       document
         .querySelector("#title")
         .textContent;
-    title += " & Lovin' it!";
+    if(cnt==0)
+    {
+     title += " & Lovin' it!";
+      cnt++;
+    }
+    
     document
         .querySelector("h1")
         .textContent = title;
+  }
+  else
+  {
+    cnt=0;
+    var title = "xyz"
+    document
+         .querySelector("h1")
+        .textContent = title;
+    
   }
 }
