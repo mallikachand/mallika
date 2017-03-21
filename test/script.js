@@ -25,4 +25,7 @@ function findMarks() {
         .querySelector("h1")
         .textContent = title;
   }
+  if (name === "Mallika") {
+  
+  }
 }
