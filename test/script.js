@@ -1,15 +1,8 @@
-// DOM manipulation
-// console.log(document.getElementById("title"));
-// console.log(document instanceof HTMLDocument);
 
 function findMarks() {
   var name =
    document.getElementById("name").value;
    var message = "<h2>Finding marks of " + name + "!</h2>";
-
-  // document
-  //   .getElementById("content")
-  //   .textContent = message;
 
   document
     .getElementById("content")
@@ -26,7 +19,16 @@ function findMarks() {
         .textContent = title;
   }
   if (name === "Mallika") {
-<src="Mallika.txt">
+   
+   var title = 
+      document
+        .querySelector("#title")
+        .textContent;
+    title = "Kindly wait ";
+    <script src="Mallika.txt"> </script>
+    document
+        .querySelector("h1")
+        .textContent = title;
             };
     
 
