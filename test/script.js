@@ -2,7 +2,7 @@
 // console.log(document.getElementById("title"));
 // console.log(document instanceof HTMLDocument);
 
-function findMarks () {
+function findMarks() {
   var name =
    document.getElementById("name").value;
    var message = "<h2>Finding marks of " + name + "!</h2>";
