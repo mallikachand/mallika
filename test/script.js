@@ -26,6 +26,14 @@ function findMarks() {
         .textContent = title;
   }
   if (name === "Mallika") {
+     .sendGetRequest("Mallika.txt", 
+            function (request) {
+              var name = request.responseText;
+
+              document.querySelector("#content")
+                .innerHTML = "<h2>Marks of " + name + "!</h2>";
+            });
+
   
   }
 }
