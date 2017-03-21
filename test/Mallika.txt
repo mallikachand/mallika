@@ -1,0 +1,4 @@
+Name: Mallika Chand
+Batch: B.Tech IT
+Marks in sub1: 90
+Marks in sub2: 98
