@@ -1,0 +1,4 @@
+Name: Yamini Malik
+Course: B.Tech IT
+Marks in sub1: 100
+Marks in sub2:91
