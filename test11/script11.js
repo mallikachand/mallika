@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded",
           .sendGetRequest("name.json", 
             function (res) {
                  var message = "Enter the number"
-              if (res.likesChineseFood) {
-                message += " likes Chinese food";
+              if (res.number ==11) {
+                message = " Mallika";
               }
               else {
                 message += " doesn't like Chinese food";
