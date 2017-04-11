@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded",
           document
             .querySelector("#title")
             .textContent;
-        title += " & Lovin' it!";
+        title += " ";
         document
             .querySelector("h1")
             .textContent = title;
