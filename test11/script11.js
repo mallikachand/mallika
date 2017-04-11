@@ -1,32 +1,28 @@
-// Event handling
-document.addEventListener("DOMContentLoaded",
-  function (event) {
-    
-    function sayHello (event) {
-      this.textContent = "Display";
-      var name =
-       document.getElementById("number").value;
-       var message = "<h2>The entered number is  " + number + "!</h2>";
-
-      document
-        .getElementById("content")
-        .innerHTML = message;
-
-      if (name === "student") {
-        var title = 
-          document
-            .querySelector("#title")
-            .textContent;
-        title += " ";
-        document
-            .querySelector("h1")
-            .textContent = title;
-      }
-    }
-
-    // Unobtrusive event binding
-    document.querySelector("button")
-      .addEventListener("click", sayHello);
-
-  }
-);
+function loadData(){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status==200){
+			var jsonObj = JSON.parse(this.responseText);
+			responseHandler(jsonObj);
+		}
+	};
+	function responseHandler(jsonObj){
+		var i = 0;
+		var number = document.getElementById('numberBox').value;
+		var output = document.getElementById('output');
+		var flag = 0;
+		// console.log(number);
+		for (var i = 0; i < jsonObj.length; i++) {
+			if (number == jsonObj[i].number) {
+				output.innerHTML = jsonObj[i].name;
+				flag = 1;
+				break;
+			}
+		}
+		if (flag == 0) {
+			output.innerHTML = "<span style='color:red;'>Number could not be found</span>";
+		}
+	}
+	xhttp.open("GET","data.json",true);
+	xhttp.send();	
+}
