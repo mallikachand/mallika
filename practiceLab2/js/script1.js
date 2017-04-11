@@ -30,15 +30,7 @@ document.addEventListener("DOMContentLoaded",
 
       }
     }
-  else
-  {
-    cnt=0;
-    var title = "Lecture 54"
-    document
-          .querySelector("button")
-          .textContent = title;
-    
-  }
+
   }
 );
 
