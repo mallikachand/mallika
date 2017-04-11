@@ -23,6 +23,6 @@ function loadData(){
 			output.innerHTML = "<span style='color:red;'>Number could not be found</span>";
 		}
 	}
-	xhttp.open("GET","data.json",true);
+	xhttp.open("GET","name.json",true);
 	xhttp.send();	
 }
